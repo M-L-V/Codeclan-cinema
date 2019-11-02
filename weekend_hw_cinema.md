@@ -23,6 +23,7 @@ It's enough if you can call your methods in pry, don't worry about an interface.
   - CRUD actions (create, read, update, delete) customers, films and tickets.
   - Show which films a customer has booked to see, and see which customers are coming to see one film.
 
+
 ### Basic extensions:
   - Buying tickets should decrease the funds of the customer by the price
   - Check how many tickets were bought by a customer
@@ -39,8 +40,8 @@ It's enough if you can call your methods in pry, don't worry about an interface.
 As part of this homework you are required to take screenshots of the following:
 
 ```
-Demonstrate searching data in a program. Take screenshots of: 
- - Function that searches data 
+Demonstrate searching data in a program. Take screenshots of:
+ - Function that searches data
  - The result of the function running
 ```
 
