@@ -40,9 +40,6 @@ class Customer
     return Customer.map_items(customer_info)
   end
 
-
-
-
   def self.delete_all()
       sql = "DELETE FROM customers"
       SqlRunner.run(sql)

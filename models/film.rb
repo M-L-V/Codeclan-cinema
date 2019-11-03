@@ -40,9 +40,6 @@ class Film
     return Film.map_items(film_info)
   end
 
-
-
-
 def self.delete_all()
     sql = "DELETE FROM films"
     SqlRunner.run(sql)
