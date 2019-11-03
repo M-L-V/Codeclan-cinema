@@ -4,9 +4,9 @@ require_relative('models/ticket.rb')
 
 require('pry-byebug')
 
-# Ticket.delete_all()
-# Film.delete_all()
-# Customer.delete_all()
+Ticket.delete_all()
+Film.delete_all()
+Customer.delete_all()
 
 
 film1 = Film.new({
