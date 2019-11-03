@@ -10,8 +10,8 @@ CREATE TABLE customers (
 );
 
 CREATE TABLE films (
-  id SERIAL4 PRIMARY KEY
-  title VARCHAR(255)
+  id SERIAL4 PRIMARY KEY,
+  title VARCHAR(255),
   price INT4
 );
 
