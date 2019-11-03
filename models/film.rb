@@ -40,6 +40,26 @@ class Film
     return Film.map_items(film_info)
   end
 
+
+  def self.map_items(film_info)
+    result = film_info.map { |film| Film.new(film) }
+    return result
+  end
+
+
+  def customers()
+    sql = "SELECT customers .* FROM Customers
+          INNER JOIN tickets
+          ON tickets.customer_id = customers.id
+          WHERE film_id = $1"
+      values = [@id]
+      customers = SqlRunner.run(sql, values)
+      result = customers.map{|customer| Customer.new(customer)}
+      return result
+    end 
+
+
+
 def self.delete_all()
     sql = "DELETE FROM films"
     SqlRunner.run(sql)
