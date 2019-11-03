@@ -34,6 +34,13 @@ class Customer
 
 
 
+  def self.all()
+    sql = "SELECT * FROM customers"
+    customer_info = SqlRunner.run(sql)
+    return Customer.map_items(customer_info)
+  end
+
+
 
 
   def self.delete_all()
