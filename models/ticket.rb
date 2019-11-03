@@ -26,6 +26,11 @@ class Ticket
   end
 
 
+  def delete()
+    sql = "DELETE FROM tickets where id = $1"
+    values = [@id]
+    SqlRunner.run(sql, values)
+  end
 
 
 
@@ -36,7 +41,7 @@ class Ticket
 
 
 
-#save, update, and delete methods below
+
 
 
 
