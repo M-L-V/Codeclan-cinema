@@ -23,6 +23,8 @@ film2 = Film.new({
 
 film2.save()
 
+
+
 customer1 = Customer.new({
   'name' => 'Peter',
   'funds' => 20
